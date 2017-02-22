@@ -24,10 +24,14 @@ class SampleController < ApplicationController
     render json: response
   end
 
+  def meta_data
+    render json: MetaDataService.data
+  end
+
   def front_end
   end
 
-  def ajax
+  def companies
     render json: [
              {
                title: 'excella',

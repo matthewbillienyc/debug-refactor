@@ -14,17 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-$(function(){
-  $.ajax({
-    url: '/ajax',
-    method: 'get',
-    success: function(data) {
-      debugger;
-      var list = data.map(function(obj){
-        return "<li>" + obj.name + "</li>"
-      });
-      $("#append_here").append(list);
-    }
-  })
-})

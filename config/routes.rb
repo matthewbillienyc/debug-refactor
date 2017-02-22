@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get '/search_byebug' => 'sample#byebug_search'
   get '/postman' => 'sample#postman'
   get '/front_end' => 'sample#front_end'
-  get '/ajax' => 'sample#ajax'
+  get '/companies' => 'sample#companies'
+  get '/meta_data' => 'sample#meta_data'
 end
