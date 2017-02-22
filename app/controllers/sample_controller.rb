@@ -20,9 +20,24 @@ class SampleController < ApplicationController
     }
 
     response = JSON.parse(SearchService.search(request_params))
-    render json: response.map do |r|
-      r.name
-    end
+    response.map { |r| r.name }
+    render json: response
+  end
+
+  def front_end
+  end
+
+  def ajax
+    render json: [
+             {
+               title: 'excella',
+               address: '2300 wilson'
+             },
+             {
+               title: 'other co',
+               address: 'nowhere'
+             }
+           ]
   end
 
   def postman

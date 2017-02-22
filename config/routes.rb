@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get '/logging' => 'sample#logging'
   get '/search_byebug' => 'sample#byebug_search'
   get '/postman' => 'sample#postman'
+  get '/front_end' => 'sample#front_end'
+  get '/ajax' => 'sample#ajax'
 end

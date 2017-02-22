@@ -1,10 +1,12 @@
 class SearchService
   def self.search(params)
     {
-      results: [
-        { name: 'bobby' },
-        { name: 'billy' }
-      ]
-    }
+      results: {
+        people: [
+          { name: 'bobby' },
+          { name: 'billy' }
+        ]
+      }
+    }.to_json
   end
 end
